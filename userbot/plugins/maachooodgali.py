@@ -20,7 +20,7 @@ from userbot import bot as mafiaopbolte
 
 
  
-@mafiaopbolte.on(mafiafightbot(pattern="raid"))
+@mafiaopbolte.on(mafiafightbot(pattern="raid|kidzzz"))
 async def _(event): 
     if event.fwd_from: 
         return 
