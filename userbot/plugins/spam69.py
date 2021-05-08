@@ -15,8 +15,8 @@ from userbot.utils import *
 from userbot import *
 
 
-@bot.on(admin_cmd(pattern="spam (.*)"))
-@bot.on(sudo_cmd(pattern="spam (.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="fspam (.*)"))
+@bot.on(sudo_cmd(pattern="fspam (.*)", allow_sudo=True))
 async def spammer(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         message = e.text
@@ -46,8 +46,8 @@ async def bigspam(hell):
             )
 
 
-@bot.on(admin_cmd("dspam (.*)"))
-@bot.on(sudo_cmd(pattern="dspam (.*)", allow_sudo=True))
+@bot.on(admin_cmd("opspam (.*)"))
+@bot.on(sudo_cmd(pattern="opspam (.*)", allow_sudo=True))
 async def spammer(e):
     if e.fwd_from:
         return
